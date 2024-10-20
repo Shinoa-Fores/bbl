@@ -49,6 +49,7 @@ usage: bbl [flags] [reference...]
   -n, --knox              Knox Bible
   -r, --rsv               Revised Standard Version: Catholic Edition
   -v, --vulgate           Clementine Vulgate
+  -w  --nwt               New World Translation
 
 Specify multiple versions to cross-reference (view them in multi-column fashion).
 This feature is not yet available for languages that are read right-to-left.
