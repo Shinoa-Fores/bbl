@@ -2,6 +2,22 @@
 
 A command line tool for searching and reading the Holy Bible.
 
+<pre>
+         ,   ,
+        /////|
+       ///// |
+      /////  |
+     |~~~| | |
+     |===| |/|
+     | B |/| |
+     | I | | |
+     | B | | |
+     | L |  / 
+     | E | /
+     |===|/
+     '---'
+</pre>     
+
 Format and original implementation from [bontibon/kjv](https://github.com/bontibon/kjv). Also a derivative of [lukesmithxyz/vul](https://github.com/LukeSmithxyz/vul).
 This implementation allows for numerous translations/versions of the Bible to be available under one executable.
 
@@ -88,7 +104,7 @@ One can easily extend this program ad nauseam by simply adding new .tsv files an
 ## Install
 
 ```
-git clone https://github.com/thenewmantis/bbl.git
+git clone https://github.com/Shinoa-Fores/bbl.git
 cd bbl
 sudo make install
 ```

@@ -1,5 +1,5 @@
 #!/bin/sh
-# https://github.com/thenewmantis/bbl.git
+# https://github.com/Shinoa-Fores/bbl.git
 
 # !!!NOTE!!! This file will probably not display as intended if viewed in a web browser.
 # Web browsers use a feature called "bidi" while displaying text. With bidi, characters from scripts that are read right-to-left will be displayed
