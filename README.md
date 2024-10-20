@@ -97,7 +97,7 @@ Specifying -i or -H will currently override all other translations and output on
 
 ## Note
 
-The default behaviour (without a flag to specify the Bible version) is to print from the Knox Bible.
+The default behaviour (without a flag to specify the Bible version) is to print from the Douay-Rheims Bible.
 To change this, set the environment variable "DEFAULT_BIBLE" to reflect the three-letter abbreviation of your translation of choice.
 One can easily extend this program ad nauseam by simply adding new .tsv files and updating the getopt and the case statement in bbl.sh accordingly.
 

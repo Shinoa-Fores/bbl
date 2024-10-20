@@ -153,7 +153,7 @@ set_bible() {
     fi
 }
 default_bible() {
-    [ "$DEFAULT_BIBLE" ] && BIBLE="$DEFAULT_BIBLE" || BIBLE="knx"
+    [ "$DEFAULT_BIBLE" ] && BIBLE="$DEFAULT_BIBLE" || BIBLE="drb"
 }
 
 lang="en" # Language of text being used--most are English
