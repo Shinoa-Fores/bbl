@@ -6,4 +6,5 @@ alias \
         knx="bbl --knox" \
         kjv="bbl --kjv" \
         rsv="bbl --rsv" \
-        vul="bbl --vulgate"
+        vul="bbl --vulgate" \
+        nwt="bbl --nwt"

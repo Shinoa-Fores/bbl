@@ -33,7 +33,7 @@ get_data_if_exists() {
 }
 get_aliases() {
     aliases="$1.aliases"
-    case "$1" in drb|grb|heb|kjv|knx|njb|rsv|vul) aliases="bibles.aliases $aliases";; esac
+    case "$1" in drb|grb|heb|kjv|knx|njb|nwt|rsv|vul) aliases="bibles.aliases $aliases";; esac
     echo "$aliases"
 }
 get_reading() {
@@ -96,6 +96,7 @@ show_help() {
     echo "  -n, --knox              Knox Bible"
         echo "  -r, --rsv               Revised Standard Version: Catholic Edition"
     echo "  -v, --vulgate           Clementine Vulgate"
+    echo "  -w, --nwt               New World Translation"
     echo
     echo "Specify multiple versions to cross-reference (view them in multi-column fashion)."
     echo "This feature is not yet available for languages that are read right-to-left."
@@ -159,7 +160,7 @@ default_bible() {
 lang="en" # Language of text being used--most are English
 list=""
 nocrossref=""
-opts="$(getopt -o lLo:WVCTBNchdgHijknrv -l list-books,list,no-line-wrap,no-verse-numbers,no-chapter-headings,no-title,no-verse-break,-no-format,cat,help,douay,greek,hebrew,ivrit,jerusalem,kjv,knox,rsv,vulgate -- "$@")"
+opts="$(getopt -o lLo:WVCTBNchdgHijknrvw -l list-books,list,no-line-wrap,no-verse-numbers,no-chapter-headings,no-title,no-verse-break,-no-format,cat,help,douay,greek,hebrew,ivrit,jerusalem,kjv,knox,rsv,vulgate,nwt -- "$@")"
 eval set -- "$opts"
 while [ $# -gt 0 ]; do
     case $1 in
@@ -239,6 +240,9 @@ while [ $# -gt 0 ]; do
                 set_bible vul
                 lang="la"
                 shift ;;
+        -w|--nwt)
+                set_bible nwt
+                shift ;;                
     esac
 done
 
