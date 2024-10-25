@@ -1,4 +1,6 @@
 # Bible
+#Uncomment to always use a precise pager w/out flags
+#PAGER=cat
 alias \
         drb="bbl --douay" \
         grb="bbl --greek" \
